@@ -1,5 +1,4 @@
 *keys
-*.sh
 .*
 docker-compose.yml
 genesis.json
