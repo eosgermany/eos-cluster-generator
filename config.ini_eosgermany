@@ -1,0 +1,36 @@
+plugin = eosio::producer_plugin
+plugin = eosio::net_plugin
+plugin = eosio::net_api_plugin
+plugin = eosio::chain_api_plugin
+plugin = eosio::history_plugin
+plugin = eosio::history_api_plugin
+plugin = eosio::wallet_api_plugin
+
+producer-name = eosgermanybp
+#producer-name = bp1
+get-transactions-time-limit = 3
+blocks-dir = "blocks"
+chain-state-db-size-mb = 2048
+max-clients = 25
+max-reversible-block-time = -1
+max-transaction-time = 10000
+max-pending-transaction-time = -1
+max-deferred-transaction-time = 20
+access-control-allow-credentials = false
+mongodb-queue-size = 256
+log-level-net-plugin = all
+connection-cleanup-period = 30
+network-version-match = 0
+sync-fetch-span = 1000
+enable-stale-production = false
+required-participation = 33
+
+#p2p-listen-endpoint = 0.0.0.0:9874
+#p2p-server-address = 0.0.0.0:9874
+
+allowed-connection = any
+
+#p2p-peer-address = 192.168.10.26:9876
+#p2p-peer-address = 192.168.10.26:9875
+
+private-key = ["EOS7KdZNdZ4xj7SHd4Y6yKRTZrzFVoYyKLReVNYDFYKaW8K5uTytD", "5JiZoQzaP5hg1XFNbs7kRDugvkiaKjJPyXr5zFwet9vLMgrQd2o"]
